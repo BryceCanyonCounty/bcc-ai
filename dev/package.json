@@ -1,0 +1,23 @@
+{
+  "name": "bcc-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "npm run clearbuild && node build/bundle.js",
+    "clearbuild": "rimraf ./dist",
+    "watch": "npm run clearbuild && cross-env IS_WATCH_MODE=1 node build/bundle.js"
+  },
+  "dependencies": {
+    "@thunder04/supermap": "^3.0.3",
+    "axios": "^1.6.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@citizenfx/server": "^2.0.7080-1",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.19.5",
+    "rimraf": "^5.0.5"
+  }
+}

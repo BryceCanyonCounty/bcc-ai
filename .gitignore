@@ -1,0 +1,11 @@
+dev/node_modules/
+.DS_Store
+node_modules/
+npm-debug.log
+.vscode/
+yarn-error.log
+example.env
+.env
+combined.log
+error.log
+ecosystem.yml
