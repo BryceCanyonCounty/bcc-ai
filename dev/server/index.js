@@ -1,6 +1,44 @@
 const { AIHorde } = require("./ai_horde.js");
+const axios = require('axios')
 
-exports("internal", async () => {
+exports("internalgpt", (apikey) => {
+  let self = {};
+
+  self.generateText = async (options) => {
+    const client = axios.create({
+        headers: {
+            Authorization: "Bearer " + apikey,
+        },
+        timeout: 30000,
+        maxBodyLength: Infinity,
+    });
+    const params = {
+        prompt: 'A Welcome message to a new player for my roleplay server for red dead redemption 2 called VORP',
+        model: "text-davinci-003",
+        max_tokens: 55,
+        temperature: 1
+    };
+    let rsp = await client
+        .post("https://api.openai.com/v1/completions", params)
+        .then((result) => {
+            console.log("Asking Recieved")
+            return result
+        })
+        .catch((err) => {
+            console.log(err)
+        });
+    let split = rsp.data.choices[0].text.split('.')
+    if (split.length > 1) {
+        split.pop()
+    }
+    return split.join('.')
+  };
+
+  return self;
+});
+
+
+exports("internalhorde", async () => {
   let self = {};
 
   let randomer = Math.floor(Math.random() * (2000 - 100 + 1) + 100)
