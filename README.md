@@ -2,11 +2,7 @@
 
 > A RedM standalone Development API System utilizing a free use LLM called AI Horde, similar to a ChatGPT type system.
 
-<<<<<<< HEAD
-_This is an experimental project, use at your own discretion._
-=======
 **This is an experimental project, use at your own discretion.**
->>>>>>> b358e1796c3ff2d0f66664c1c9809165f415685c
 
 ## How to install
 
@@ -17,12 +13,8 @@ _This is an experimental project, use at your own discretion._
 
 ## API Docs
 
-<<<<<<< HEAD
 ### Generate text based on a prompt with Horde
 
-=======
-### Generate text based on a prompt (Server side only!)
->>>>>>> b358e1796c3ff2d0f66664c1c9809165f415685c
 ```lua
 local AI = exports['bcc-ai'].Initiate()
 local test = AI.generateText('Hello what is your name?')
