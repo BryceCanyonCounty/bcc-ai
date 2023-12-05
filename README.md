@@ -33,7 +33,6 @@ print(test[1].text)
 
 ### Generate text based on a prompt with ChatGPT
 
-<<<<<<< HEAD
 ```lua
 local AI = exports['bcc-ai'].Initiate('gpt')
 local test = AI.generateText({
@@ -45,21 +44,9 @@ local test = AI.generateText({
 
 print(test[1].text)
 ```
-=======
-## Todo
-- Add OpenAI/ChatGPT option
->>>>>>> b358e1796c3ff2d0f66664c1c9809165f415685c
 
 ## Credits
 
 ### [AI Horde](https://aihorde.net)
 
-<<<<<<< HEAD
-https://aihorde.net
-
-The more you use this without contributing by joining the horde, the lower your request is in any priority processing queue. However, this helps it remain completely free. If you wish to help support this free to use system, join the horde and host an LLM. This will increase your queue status.
-
-> https://github.com/Haidra-Org/AI-Horde/blob/main/README_StableHorde.md#joining-the-horde
-=======
 The more you use this without contributing by [joining the horde](https://github.com/Haidra-Org/AI-Horde/blob/main/README_StableHorde.md#joining-the-horde), the lower your request is in any priority processing queue. However, this helps it remain completely free. If you wish to help support this free to use system, join the horde and host an LLM. This will increase your queue status. 
->>>>>>> b358e1796c3ff2d0f66664c1c9809165f415685c
