@@ -1,6 +1,6 @@
 {
   "name": "bcc-ai",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
@@ -10,6 +10,7 @@
     "watch": "npm run clearbuild && cross-env IS_WATCH_MODE=1 node build/bundle.js"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "@thunder04/supermap": "^3.0.3",
     "axios": "^1.6.0",
     "node-fetch": "^3.3.2"
